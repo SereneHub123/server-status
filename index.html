@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Status</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <div class="hTitle">
+        Minecraft Server Status
+    </div>
+
+    <div class="hSearch">
+        <input type="text" class="hIP" placeholder="Enter Server IP">
+
+        <button class="hBtn" onclick="fetchInfo()">Search</button>
+
+    </div>
+
+    <div class="hInfo">
+        <div class="hInfoF">
+            <div class="hLogo">
+                <img class="hImage" src="media/question.png" alt="serverLogo">
+            </div>
+            <div class="hPlayers"></div>
+            <div class="hOnline"></div>
+        </div>
+        <div class="hInfoS">
+            <div class="hVersion"></div>
+            <div class="hSoftware"></div>
+        </div>
+        <div class="hInfoT">
+            <div class="motd">Loading...</div>
+        </div>
+
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
